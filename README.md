@@ -1,2 +1,2 @@
 # jettywrench
-https://vanita096.github.io/jettywrench
+https://vanita096.github.io/jettywrench/login
