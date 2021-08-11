@@ -1,0 +1,3 @@
+<textarea class="form-control @isset($size)form-control-{{ $size }}@endisset {{ $errors->has(snake_case($id)) ? 'is-invalid' : '' }}" id="{{ kebab_case($id) }}" name="{{ snake_case($id) }}" @isset($pattern)pattern="{{ $pattern }}"@endif @isset($mask)data-mask="{{ $mask }}" data-mask-clearifnotmatch="true" data-mask-selectonfocus="true"@endif placeholder="@if($errors->count() == 0 && !(isset($show_labels) && $show_labels == true)){{ $slot ?? $placeholder }} @else{{ $example ?? '' }} @endif" @if(isset($autofocus) && $autofocus === true)autofocus @endif>
+@isset($value){{ old(snake_case($id), $value) }}@else{{ old(snake_case($id)) }}@endif
+</textarea>

@@ -1,0 +1,236 @@
+
+// Fonts
+@import '~@fortawesome/fontawesome-pro/scss/fontawesome';
+@import '~@fortawesome/fontawesome-pro/scss/regular';
+@import '~@fortawesome/fontawesome-pro/scss/solid';
+@import '~@fortawesome/fontawesome-pro/scss/light';
+@import '~@fortawesome/fontawesome-pro/scss/brands';
+
+// Variables
+@import 'variables';
+
+// Bootstrap
+@import '~bootstrap/scss/bootstrap';
+
+@import '~datatables.net-bs4/css/dataTables.bootstrap4';
+
+.dropdown-ellipsis .dropdown-toggle::after {
+  display:none !important;
+}
+
+.table th:first-of-type {
+  width: 55px;
+}
+
+.table th:last-of-type {
+  width: 55px;
+}
+
+.card {
+  box-shadow: 0 3px 8px #d4d4d4;
+}
+
+.sidebar .nav-item:hover {
+  background-color: #f1f1f1;
+}
+
+.sidebar .nav .nav-item a {
+  color: #0D3349;
+}
+
+.sidebar .nav .nav-item i {
+  color: #5a6268;
+}
+
+.sidebar {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+}
+
+.sidebar-sticky {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 57px;
+  left: 0;
+  height: calc(100vh - 57px);
+  overflow-y: auto;
+}
+
+.form-buttons {
+  border-top: #eee 1px solid;
+  padding-top: 20px;
+  margin-top: 40px;
+  text-align: right;
+}
+
+.draggable-handle {
+  cursor: -webkit-grab !important;
+  cursor: grab         !important;
+}
+
+.sortable-chosen {
+  background-color: #D6EAF8;
+}
+
+.jw-sidebar {
+  background-color: #274C77;
+  position: sticky;
+  top:0;
+  height: 100vh;
+  overflow-x: hidden;
+}
+
+@media (max-width: 767px) {
+  .jw-sidebar  {
+    position: relative;
+    height: fit-content;
+  }
+}
+
+.jw-sidebar.collapsing {
+  -webkit-transition: none;
+  transition: none;
+  display: none;
+}
+
+.jw-sidebar #top-action {
+
+
+  > a {
+    color: #EDF7F6;
+    background-color: #16425B;
+
+    &:hover {
+      background-color: #133f56;
+    }
+  }
+
+  .dropdown-menu {
+
+      .dropdown-header {
+          font-size: 16px;
+      }
+
+      .dropdown-item {
+          padding-bottom: 10px;
+      }
+
+  }
+
+}
+
+
+.jw-sidebar .nav a {
+  color: #EDF7F6;
+  opacity: 0.8;
+  font-size: 16px;
+}
+
+.jw-sidebar .nav a:hover {
+  color: #EDF7F6;
+  opacity: 1.0;
+}
+
+.jw-sidebar i {
+  font-size: 22px;
+}
+
+.jw-sidebar .nav-item a.nav-link.active, .jw-sidebar .nav-item a.nav-link.active i {
+  color: #009FFD;
+}
+
+.nav-tabs.card-footer-tabs {
+  margin-right: -.625rem;
+  margin-top: -.75rem;
+  margin-left: -.625rem;
+  border-bottom: 0;
+}
+
+.nav-tabs.card-footer-tabs .nav-link {
+  margin-top: -1px;
+}
+
+.nav-tabs.card-footer-tabs .nav-link:hover {
+  margin-top: -1px;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+  border-bottom-left-radius: .25rem;
+  border-bottom-right-radius: .25rem;
+  border-color: #dee2e6;
+}
+
+.nav-tabs.card-footer-tabs .nav-link.active {
+  border: 1px solid transparent;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+  border-bottom-left-radius: .25rem;
+  border-bottom-right-radius: .25rem;
+  border-color: #fff #dee2e6 #dee2e6 #dee2e6;
+}
+
+.table-status .badge {
+  min-width: 80px;
+}
+
+.jw-credit a:hover {
+  text-decoration: none;
+}
+
+.jw-table thead th{
+  border-top: none;
+  padding-bottom: 5px;
+  padding-top: 5px;
+}
+
+.jw-table-linked tbody tr {
+  cursor: pointer;
+}
+
+.jw-remove-collapse-animation.collapsing {
+  -webkit-transition: none;
+  transition: none;
+  display: none;
+}
+
+/* Icon when the collapsible content is shown */
+.jw-collapse-toggle{
+
+  &:before {
+    content: attr(data-expanded-text);
+  }
+
+  &:after {
+    @extend .fas;
+    content: fa-content($fa-var-caret-up);
+    padding: 0 7px;
+  }
+}
+
+/* Icon when the collapsible content is hidden */
+.jw-collapse-toggle.collapsed {
+
+  &:before {
+    content: attr(data-collapsed-text);
+  }
+
+  &:after {
+    @extend .fas;
+    content: fa-content($fa-var-caret-down);
+  }
+}
+
+a.jw-link-decoration-none:hover {
+  text-decoration: none;
+}
+
+.input-group.round-right input:last-of-type {
+  border-bottom-right-radius: 0.3rem;
+  border-top-right-radius: 0.3rem;
+}
+
+a.card {
+  text-decoration: none;
+}
+
+table.dt-rowReorder-float{position:absolute !important;opacity:0.8;table-layout:fixed;outline:2px solid #888;outline-offset:-2px;z-index:2001}tr.dt-rowReorder-moving{outline:2px solid #555;outline-offset:-2px}body.dt-rowReorder-noOverflow{overflow-x:hidden}table.dataTable td.reorder{text-align:center;cursor:move}

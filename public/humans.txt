@@ -1,0 +1,12 @@
+/* TEAM */
+
+Creator: Daniel Szewczyk
+Email: daniel@jettywrench.com
+Location: New York, NY
+
+/* THANKS */
+
+Name: Cliff
+
+/* SITE */
+Last update: 2018/08/05

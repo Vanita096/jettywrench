@@ -1,0 +1,1 @@
+@includeFirst(['tenant.public.custom.' . request()->tenant()->uuid_text . '.includes.footer', 'tenant.public.default.includes.footer'])
